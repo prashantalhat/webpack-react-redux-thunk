@@ -1,0 +1,1 @@
+first objective would be to replace list of products fetch using redux thunk and api
