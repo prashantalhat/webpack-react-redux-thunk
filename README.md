@@ -1,7 +1,8 @@
 ![](http://jpsierens.com/wp-content/uploads/2016/06/react-eco-wp.gif)
 
-# webpack-react-redux
+# webpack-react-redux-thunk
 A boilerplate for playing around with react, redux and react-router with the help of webpack.
+This repository is fork of https://github.com/jpsierens/webpack-react-redux and extended to support rest api calls using fetch and redux thunk.
 
 Contains: 
 
@@ -14,10 +15,6 @@ Contains:
 * Sass support, just import your styles wherever you need them
 * eslint to keep your js readable
 * much more...
-
-
-
-![](http://jpsierens.com/wp-content/uploads/2016/06/filterableTable-1.gif)
 
 
 ## Run the app
