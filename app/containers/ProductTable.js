@@ -5,25 +5,33 @@ import ProductRow from '../components/ProductRow';
 import { fetchPostsRequest, fetchPostsSuccess, fetchPostsError } from '../actions';
 import { fetchPosts } from '../services';
 
+import { notesContainer } from '../styles/note.scss';
+
 class ProductTable extends React.Component {
     constructor(props) {
         super(props);
     }
 
     componentDidMount() {
+        this.refreshList();
+    }
+
+    refreshList = () => {
         this.props.fetchPostsWithRedux();
     }
 
     render() {
         let rows = [];
         const posts = this.props.posts;
+        const that = this;
         if (posts) {
             posts.forEach((p, index) => {
                 rows.push(
-                    <ProductRow key={index} data={p} />
+                    <ProductRow key={index} data={p}
+                    refreshNotesList={that.refreshList}/>
                 );
             });
-            return <div> {rows} </div>;
+            return <div className={notesContainer}> {rows} </div>;
         }
         return <p>no posts yet</p>;
     }

@@ -1,5 +1,11 @@
 export const FILTER = 'FILTER';
+
+// Fetch Notes
 export const FETCH_REQUEST = 'FETCH_REQUEST';
 export const FETCH_SUCCESS = 'FETCH_SUCCESS';
 export const FETCH_ERROR = 'FETCH_ERROR';
 
+// Delete Note
+export const DELETE_NOTES_REQUEST = 'DELETE_NOTES_REQUEST';
+export const DELETE_NOTES_SUCCESS = 'DELETE_NOTES_SUCCESS';
+export const DELETE_NOTES_ERROR = 'DELETE_NOTES_ERROR';

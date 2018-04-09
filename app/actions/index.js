@@ -25,3 +25,22 @@ export function fetchPostsError() {
         type: types.FETCH_ERROR
     };
 }
+
+export function deleteNoteRequest() {
+    return {
+        type: types.DELETE_NOTES_REQUEST
+    };
+}
+
+export function deleteNoteSuccess(payload) {
+    return {
+        type: types.DELETE_NOTES_SUCCESS,
+        payload
+    };
+}
+
+export function deleteNoteError() {
+    return {
+        type: types.DELETE_NOTES_ERROR
+    };
+}
